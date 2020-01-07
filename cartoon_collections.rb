@@ -18,6 +18,7 @@ def find_the_cheese(array)
   result = nil 
   array.find do |cheese|
     if array.include? cheese_types
+      print cheese_types
       result = cheese_types
       result
       break
