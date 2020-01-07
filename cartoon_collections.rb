@@ -16,10 +16,11 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   result = nil 
-  array.find |cheese|
+  array.find do |cheese|
     if array.include? cheese
       result = cheese
       break
     end
+    result 
   end 
 end
