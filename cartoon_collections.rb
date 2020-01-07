@@ -18,9 +18,8 @@ def find_the_cheese(array)
   result = nil 
   array.find do |cheese|
     if array.include? cheese
-      result = cheese
+      return cheese 
       break
     end
   end 
-  result 
 end
