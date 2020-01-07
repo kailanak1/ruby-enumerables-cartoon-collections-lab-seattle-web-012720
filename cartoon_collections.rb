@@ -15,13 +15,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  result = nil 
-  array.find do |cheese|
-    if array.include? cheese_types
-      print cheese_types
-      result = cheese_types
-      result
-      break
-    end
-  end 
+  result = array.find {|el| el.include?(cheese_types)}
+  print result 
 end
