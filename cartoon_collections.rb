@@ -16,7 +16,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   result = nil 
-  array.each do |cheese|
+  array.find do |cheese|
     if array.include? cheese
       result = cheese
       break
