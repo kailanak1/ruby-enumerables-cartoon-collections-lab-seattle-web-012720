@@ -21,6 +21,6 @@ def find_the_cheese(array)
       result = cheese
       break
     end
-    result 
   end 
+  result 
 end
